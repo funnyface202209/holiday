@@ -27,7 +27,7 @@
     .activity-grid{grid-template-columns:repeat(3,1fr)}.activity-card{min-height:350px}.activity-card:nth-child(3){background:#eef7fb;border-color:#c9e1ea}.common-note{grid-template-columns:repeat(4,1fr)}.venue-box{margin-top:16px;padding:16px;border-radius:18px;background:#fff;border:1px solid rgba(95,120,81,.18)}.venue-box p{margin:3px 0}.venue-box .btn{margin-top:9px}.theme-coming{display:inline-block;padding:5px 11px;border-radius:999px;background:#fff1b7;color:#775448;font-weight:900}.shared-info{margin-top:18px;padding:18px;border-radius:20px;background:#f7f3e8}.shared-info h3{margin:0 0 7px}.shared-info p{margin:3px 0}@media(max-width:980px){.activity-grid,.common-note{grid-template-columns:repeat(2,1fr)}}@media(max-width:780px){.activity-grid,.common-note{grid-template-columns:1fr}}
   </style>
   <style>
-    .brand{flex:0 0 auto}.brand-logo{display:block;width:190px;max-width:38vw;height:auto}.hero-logo{display:block;width:min(430px,78vw);height:auto;margin:0 auto 14px;filter:drop-shadow(0 7px 12px rgba(109,82,51,.07))}.hero h1{font-family:"Huninn","Noto Sans TC","PingFang TC",sans-serif;font-weight:400;letter-spacing:.035em;-webkit-text-stroke:.35px currentColor}.activity-poster{margin:0 auto 22px;padding:10px;max-width:980px;border:2px solid rgba(234,223,206,.9);border-radius:30px;background:#fff;box-shadow:var(--shadow)}.activity-poster img{display:block;width:100%;height:auto;border-radius:20px}.activity-poster figcaption{padding:8px 8px 2px;color:var(--muted);font-size:13px;text-align:center}.signup-section{margin:24px auto 0;padding:clamp(25px,4vw,38px);border:2px solid #d9e4cf;border-radius:30px;background:linear-gradient(135deg,#f0f7eb,#fff8e7);box-shadow:var(--shadow)}.signup-section h2{margin:0;color:var(--brown);font-size:clamp(26px,4vw,38px)}.signup-section>p{margin:5px 0 17px;color:var(--muted)}.signup-options{display:grid;grid-template-columns:1fr 1fr;gap:13px}.signup-card{padding:20px;border:2px solid var(--line);border-radius:21px;background:#fff}.signup-card:first-child{border-color:#ead38c;background:#fffaf0}.signup-card:last-child{border-color:#cbdcc1;background:#f7fbf4}.signup-card strong{display:block;color:var(--brown);font-size:19px}.signup-card p{margin:5px 0 13px;color:var(--muted);font-size:14px}.signup-card .btn{width:100%}@media(max-width:780px){.brand-logo{width:170px;max-width:62vw}.hero-logo{width:min(360px,82vw)}.activity-poster{padding:6px;border-radius:22px}.activity-poster img{border-radius:15px}.signup-options{grid-template-columns:1fr}}
+    .brand{flex:0 0 auto}.brand-logo{display:block;width:190px;max-width:38vw;height:auto}.hero-logo{display:block;width:min(430px,78vw);height:auto;margin:0 auto 14px;filter:drop-shadow(0 7px 12px rgba(109,82,51,.07))}.hero h1{font-family:"Huninn","Noto Sans TC","PingFang TC",sans-serif;font-weight:400;letter-spacing:.035em;-webkit-text-stroke:.35px currentColor}.hero.hero-banner-section{min-height:0;padding:0 0 28px;background:#fff;text-align:center}.hero-banner{display:block;width:100%;height:auto}.hero-banner-actions{width:min(1080px,calc(100% - 32px));margin:22px auto 0}.activity-poster{margin:0 auto 22px;padding:10px;max-width:980px;border:2px solid rgba(234,223,206,.9);border-radius:30px;background:#fff;box-shadow:var(--shadow)}.activity-poster img{display:block;width:100%;height:auto;border-radius:20px}.activity-poster figcaption{padding:8px 8px 2px;color:var(--muted);font-size:13px;text-align:center}.signup-section{margin:24px auto 0;padding:clamp(25px,4vw,38px);border:2px solid #d9e4cf;border-radius:30px;background:linear-gradient(135deg,#f0f7eb,#fff8e7);box-shadow:var(--shadow)}.signup-section h2{margin:0;color:var(--brown);font-size:clamp(26px,4vw,38px)}.signup-section>p{margin:5px 0 17px;color:var(--muted)}.signup-options{display:grid;grid-template-columns:1fr 1fr;gap:13px}.signup-card{padding:20px;border:2px solid var(--line);border-radius:21px;background:#fff}.signup-card:first-child{border-color:#ead38c;background:#fffaf0}.signup-card:last-child{border-color:#cbdcc1;background:#f7fbf4}.signup-card strong{display:block;color:var(--brown);font-size:19px}.signup-card p{margin:5px 0 13px;color:var(--muted);font-size:14px}.signup-card .btn{width:100%}@media(max-width:780px){.brand-logo{width:170px;max-width:62vw}.hero-logo{width:min(360px,82vw)}.hero.hero-banner-section{min-height:0;padding:0 0 22px}.hero-banner-actions{width:min(100% - 22px,1080px);margin-top:16px}.activity-poster{padding:6px;border-radius:22px}.activity-poster img{border-radius:15px}.signup-options{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -46,16 +46,9 @@
   </header>
 
   <div class="page active" id="home">
-    <section class="hero">
-      <div class="sun"></div><div class="cloud"></div>
-      <div class="wrap hero-copy">
-        <img class="hero-logo" src="funnyface-logo-transparent.png" alt="FunnyFace 小基地">
-        <span class="eyebrow">TOUCH · MOVE · CREATE</span>
-        <h1>小小身體，<br><span>大大感受。</span></h1>
-        <p class="lead">把主題、觸感、動作與創作放在一起，陪孩子用自己的步調探索，也讓大人重新看見孩子正在感受什麼。</p>
-        <div class="hero-actions"><button class="btn yellow" data-scroll="upcoming">看看近期活動</button><button class="btn light" data-page="little-feet">先看小腳ㄚ</button></div>
-      </div>
-      <div class="landscape"><div class="hill a"></div><div class="hill b"></div><div class="hill c"></div><span class="doodle d1">🎨</span><span class="doodle d2">🌈</span><span class="doodle d3">🫧</span><span class="doodle d4">👣</span></div>
+    <section class="hero hero-banner-section">
+      <img class="hero-banner" src="five-senses-hero.png" alt="FunnyFace 小基地五感體驗｜小小身體，大大感受。">
+      <div class="hero-actions hero-banner-actions"><button class="btn yellow" data-scroll="upcoming">看看近期活動</button><button class="btn light" data-page="little-feet">先看小腳ㄚ</button></div>
     </section>
 
     <main>
@@ -83,7 +76,7 @@
       <div class="back"><button class="btn light" data-page="home">← 回五感首頁</button></div>
       <section class="detail-hero"><span class="eyebrow">五感體驗｜單場活動</span><h1>小腳ㄚ 👣</h1><p class="sub">脫下鞋襪，讓小腳ㄚ也來一場探索。從腳尖輕輕碰觸，到踩上去、走一走，陪孩子發現軟硬、粗細與身體移動時的不同感受。</p><div class="facts"><div class="fact"><span>日期</span><strong>12/6（日）</strong></div><div class="fact"><span>時間</span><strong>10:30–11:30</strong></div><div class="fact"><span>對象</span><strong>2Y～中班</strong></div><div class="fact"><span>費用</span><strong>$580</strong></div></div></section>
 
-      <figure class="activity-poster"><img src="poster-little-feet.png" alt="五感體驗愛玩課小腳ㄚ活動海報，12 月 6 日 10:30 至 11:30"><figcaption>小腳ㄚ｜活動海報</figcaption></figure>
+      <figure class="activity-poster"><img src="poster-little-feet.png" alt="五感體驗小腳ㄚ活動海報，12 月 6 日 10:30 至 11:30"><figcaption>小腳ㄚ｜活動海報</figcaption></figure>
 
       <section class="detail-layout">
         <article class="card"><h2>這一堂會玩什麼？</h2><p>活動運用不同媒材，邀請孩子用小腳踩踩看，感受平常穿著鞋襪時不容易察覺的細節。每個孩子都有自己的探索方式，我們會陪伴孩子依照自己的步調嘗試，用動作、表情或語言表達發現。</p><div class="feature-list"><div class="feature"><strong>👣 多樣腳底觸感</strong><br>透過不同媒材，體驗軟硬、粗細與溫度的變化。</div><div class="feature"><strong>🧍 身體與腳步</strong><br>在踩踏與移動中，留意身體重心與腳步的改變。</div><div class="feature"><strong>💬 表達自己的感受</strong><br>練習說出喜歡、猶豫或不舒服，也認識自己的偏好。</div></div></article>
@@ -103,7 +96,7 @@
     <main class="wrap">
       <div class="back"><button class="btn light" data-page="home">← 回五感首頁</button></div>
       <section class="detail-hero"><span class="eyebrow">五感體驗｜單場活動</span><h1>FLOWER 🌼</h1><p class="sub">十二月的五感主題，讓孩子從花朵的顏色、形狀與感受出發，透過媒材、觸感和創作留下自己的 FLOWER。</p><div class="facts"><div class="fact"><span>日期</span><strong>12/13（日）</strong></div><div class="fact"><span>時間</span><strong>10:30–11:30</strong></div><div class="fact"><span>對象</span><strong>2Y～中班</strong></div><div class="fact"><span>費用</span><strong>$580</strong></div></div></section>
-      <figure class="activity-poster"><img src="poster-flower.png" alt="五感體驗愛玩課 FLOWER 活動海報，12 月 13 日 10:30 至 11:30"><figcaption>FLOWER｜活動海報</figcaption></figure>
+      <figure class="activity-poster"><img src="poster-flower.png" alt="五感體驗 FLOWER 活動海報，12 月 13 日 10:30 至 11:30"><figcaption>FLOWER｜活動海報</figcaption></figure>
       <section class="detail-layout">
         <article class="card"><h2>本月主題｜FLOWER</h2><p>每月五感活動會更換主題與媒材。FLOWER 場次以花朵為主題，讓孩子用眼睛觀察、用身體感受，再依照自己的方式參與創作。</p><div class="shared-info"><h3>五感活動共同安排</h3><p>單堂 60 分鐘，2 歲至幼兒園中班參加。</p><p>每位孩子僅需一位家長陪同，10:20 後可進場。</p><p>活動會使用顏料或感官媒材，衣物可能弄髒。</p></div></article>
         <aside class="card side-card"><h2>活動資訊</h2><p><strong>僅需一位家長陪同</strong></p><p>費用包含講師、教材與場地；3 人開班。</p><h3>請準備</h3><ul><li>方便活動、可以弄髒的衣物</li><li>一套替換衣物</li><li>毛巾或濕紙巾</li><li>孩子的水壺</li></ul><div class="venue-box"><strong>📍 HappyFace 大基地</strong><p>暖暖街 459 號 1 樓（全家旁邊）</p><a class="btn light" href="https://maps.app.goo.gl/oyYRuQWsybE1D6WGA" target="_blank" rel="noopener">開啟 Google 地圖</a></div></aside>
