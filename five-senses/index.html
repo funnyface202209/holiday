@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FunnyFace 小基地五感體驗：為 2 歲至幼兒園中班孩子設計的親子感官探索活動。">
+  <title>五感體驗｜FunnyFace 小基地</title>
+  <base href="/holiday/five-senses/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Huninn&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --cream:#fffaf0;--paper:#fffef9;--ink:#55483d;--muted:#817468;
+      --brown:#775448;--yellow:#ffd968;--yellow-soft:#fff1b7;
+      --green:#83a875;--green-soft:#edf5e7;--blue:#79b6cf;
+      --blue-soft:#eaf6fb;--coral:#ef8a72;--line:#eadfce;
+      --shadow:0 13px 32px rgba(107,82,51,.11)
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#fff9ed,#fffef9 48%,#f3f8ed);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.8}.wrap{width:min(1080px,calc(100% - 32px));margin:auto}button,a{font:inherit}.topbar{position:sticky;top:0;z-index:50;background:rgba(255,250,240,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}.topbar .wrap{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;color:var(--brown);font-weight:900;text-decoration:none}.brand-face{width:43px;height:43px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;box-shadow:3px 4px 0 #ead7a5;font-size:23px}.brand small{display:block;color:var(--muted);font-size:11px;margin-top:-5px}.nav{display:flex;gap:7px;overflow:auto;scrollbar-width:none}.nav button{border:1px solid transparent;background:transparent;border-radius:999px;padding:8px 13px;color:var(--brown);white-space:nowrap;font-weight:900;cursor:pointer}.nav button:hover,.nav button.active{background:#fff;border-color:var(--line);box-shadow:0 4px 12px rgba(90,65,40,.07)}
+    .page{display:none}.page.active{display:block;animation:fade .25s ease}@keyframes fade{from{opacity:.25;transform:translateY(5px)}}
+    .hero{position:relative;overflow:hidden;min-height:530px;padding:62px 0 210px;text-align:center}.hero-copy{position:relative;z-index:4}.eyebrow{display:inline-block;padding:5px 13px;border:2px solid #cde2c4;border-radius:999px;background:#fff;color:#5e8156;font-weight:900;letter-spacing:.12em;font-size:12px}.hero h1{margin:14px 0 12px;color:var(--brown);font-size:clamp(42px,7vw,72px);line-height:1.1;text-shadow:0 3px 0 #fff}.hero h1 span{color:var(--coral)}.lead{max-width:720px;margin:0 auto;font-size:18px;color:#675c53}.hero-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:24px}.btn{display:inline-flex;align-items:center;justify-content:center;border:2px solid var(--green);border-radius:999px;padding:10px 19px;color:#fff;background:var(--green);font-weight:900;text-decoration:none;cursor:pointer;box-shadow:0 7px 16px rgba(87,127,78,.15)}.btn:hover{transform:translateY(-1px)}.btn.yellow{background:var(--yellow);border-color:#e9c650;color:#6d502f}.btn.light{background:#fff;color:var(--brown);border-color:var(--line);box-shadow:none}.landscape{position:absolute;left:0;right:0;bottom:0;height:230px}.hill{position:absolute;bottom:-80px;border-radius:50% 50% 0 0}.hill.a{left:-8%;width:62%;height:220px;background:#dfeccb;transform:rotate(3deg)}.hill.b{right:-10%;width:68%;height:250px;background:#d7edf0;transform:rotate(-4deg)}.hill.c{left:30%;width:44%;height:150px;background:#ffe5a0}.doodle{position:absolute;z-index:3;font-size:clamp(34px,6vw,68px);filter:drop-shadow(0 5px 4px rgba(91,69,39,.08))}.d1{left:8%;bottom:98px;transform:rotate(-13deg)}.d2{right:10%;bottom:112px;transform:rotate(11deg)}.d3{left:24%;bottom:42px}.d4{right:28%;bottom:44px}.sun{position:absolute;right:7%;top:46px;width:90px;height:90px;border-radius:50%;background:#ffe58e;opacity:.65}.cloud{position:absolute;left:7%;top:70px;width:115px;height:32px;border-radius:999px;background:#dceff3;opacity:.7}.cloud:before,.cloud:after{content:"";position:absolute;border-radius:50%;background:inherit;bottom:0}.cloud:before{width:50px;height:50px;left:15px}.cloud:after{width:64px;height:64px;right:10px}
+    main{padding:18px 0 78px}.section{padding:34px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:22px;margin-bottom:20px}.section-head h2,.page-title{margin:4px 0;color:var(--brown);font-size:clamp(30px,4.8vw,48px);line-height:1.2}.section-head p{max-width:560px;margin:0;color:var(--muted)}.activity-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.activity-card{position:relative;overflow:hidden;min-height:330px;padding:29px;border:2px solid var(--line);border-radius:30px;background:var(--paper);box-shadow:var(--shadow)}.activity-card:first-child{background:#fff9df;border-color:#eed88c}.activity-card:nth-child(2){background:#eff6eb;border-color:#cfe0c4}.activity-card:after{content:"";position:absolute;right:-38px;bottom:-42px;width:160px;height:160px;border-radius:48% 52% 45% 55%;background:rgba(255,255,255,.65)}.activity-card .icon{font-size:44px}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.tag{display:inline-block;padding:4px 9px;border-radius:999px;background:#fff;color:#7d654f;border:1px solid rgba(119,84,72,.14);font-size:12px;font-weight:900}.activity-card h3{font-size:27px;color:var(--brown);margin:12px 0 5px}.activity-card p{color:var(--muted);margin:0 0 20px}.activity-card .btn{position:relative;z-index:2}.philosophy{display:grid;grid-template-columns:.84fr 1.16fr;gap:26px;padding:clamp(26px,5vw,54px);border:2px solid #d4e3ca;border-radius:32px;background:linear-gradient(135deg,#eef6e8,#fffaf0);box-shadow:var(--shadow)}.philosophy h2{font-size:clamp(30px,4vw,45px);line-height:1.25;color:#5d7756;margin:0}.philosophy p{margin:0;color:#5d5a4d}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border:2px solid var(--line);border-radius:24px;padding:23px;background:#fff}.step:nth-child(2){background:#fff7d9;border-color:#ead38c}.step:nth-child(3){background:#eef6e8;border-color:#cbdcc3}.step b{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--coral);color:#fff;margin-bottom:10px}.step h3{margin:0;color:var(--brown)}.step p{margin:4px 0 0;color:var(--muted)}.common-note{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.note-card{padding:20px;border-radius:22px;background:#fff;border:2px solid var(--line)}.note-card strong{display:block;color:var(--brown);font-size:18px}.note-card span{color:var(--muted);font-size:14px}
+    .detail-hero{margin:40px 0 20px;padding:clamp(27px,5vw,52px);border:2px solid #ecd68f;border-radius:32px;background:linear-gradient(135deg,#fff5c8,#fffdf7);box-shadow:var(--shadow);position:relative;overflow:hidden}.detail-hero:after{content:"👣";position:absolute;right:6%;bottom:-15px;font-size:140px;opacity:.13;transform:rotate(-12deg)}.detail-hero>*{position:relative;z-index:1}.detail-hero h1{font-size:clamp(38px,6vw,62px);line-height:1.12;color:var(--brown);margin:11px 0}.detail-hero .sub{max-width:720px;color:#6e6259;font-size:18px}.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:24px}.fact{padding:14px;border:2px solid rgba(197,156,70,.22);border-radius:17px;background:rgba(255,255,255,.78)}.fact span{display:block;color:var(--muted);font-size:12px;font-weight:900}.fact strong{color:var(--brown)}.detail-layout{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.card{padding:clamp(22px,4vw,34px);border:2px solid var(--line);border-radius:28px;background:#fff;box-shadow:var(--shadow)}.card h2,.card h3{color:var(--brown);margin-top:0}.feature-list{display:grid;gap:10px}.feature{padding:15px 17px;border-radius:16px;background:#f4f8ef}.feature:nth-child(2){background:#eef7fb}.feature:nth-child(3){background:#fff5d6}.side-card{background:#eff6ea;border-color:#cbdcc1}.side-card ul{padding-left:1.2em}.poster-placeholder{margin-top:18px;min-height:245px;border:2px dashed #d7c79b;border-radius:22px;background:linear-gradient(145deg,#fff7d7,#eaf4e5);display:grid;place-items:center;text-align:center;padding:25px;color:#7e6b50}.poster-placeholder b{display:block;font-size:48px}.poster-placeholder span{font-weight:900}.accordion-wrap{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.accordion-group{padding:26px;border:2px solid var(--line);border-radius:28px;background:#fff}.accordion-group h2{color:var(--brown);margin-top:0}details{border-top:1px solid var(--line)}details:first-of-type{border-top:0}summary{position:relative;padding:15px 32px 15px 0;font-weight:900;cursor:pointer;list-style:none;color:#665044}summary:after{content:"＋";position:absolute;right:3px;color:var(--coral);font-size:21px}details[open] summary:after{content:"−"}details>div{padding:0 0 16px;color:var(--muted)}.bottom-cta{margin-top:20px;padding:28px;border-radius:28px;background:linear-gradient(135deg,#8fac82,#739b78);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:20px}.bottom-cta h2{margin:0}.bottom-cta p{margin:5px 0 0;color:#f7fff2}.bottom-cta .btn{background:var(--yellow);border-color:var(--yellow);color:#644d31;white-space:nowrap}.back{margin:26px 0 0}.footer{background:#68594b;color:#fff9eb;padding:38px 0}.footer-grid{display:flex;justify-content:space-between;gap:30px;align-items:start}.footer h3{margin:0}.footer p{margin:4px 0;color:#fff9ebba}.footer-links{display:flex;gap:9px;flex-wrap:wrap}.footer-links a{color:#fff;text-decoration:none;border:1px solid #ffffff44;border-radius:999px;padding:7px 12px}
+    @media(max-width:780px){.topbar .wrap{align-items:flex-start;flex-direction:column;padding:10px 0 8px}.nav{width:100%}.hero{min-height:500px;padding:44px 0 190px}.lead{font-size:16px}.activity-grid,.philosophy,.detail-layout,.accordion-wrap{grid-template-columns:1fr}.steps,.common-note{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr}.section-head,.bottom-cta,.footer-grid{align-items:flex-start;flex-direction:column}.activity-card{min-height:0}.d1{left:2%}.d2{right:2%}}
+    @media(max-width:470px){.wrap{width:min(100% - 22px,1080px)}.hero h1{font-size:43px}.hero-actions .btn{width:100%}.facts{grid-template-columns:1fr}.brand small{display:none}.activity-card,.card,.accordion-group{border-radius:22px}.detail-hero{border-radius:24px}.landscape{height:190px}.doodle{font-size:39px}}
+    .activity-grid{grid-template-columns:repeat(3,1fr)}.activity-card{min-height:350px}.activity-card:nth-child(3){background:#eef7fb;border-color:#c9e1ea}.common-note{grid-template-columns:repeat(4,1fr)}.venue-box{margin-top:16px;padding:16px;border-radius:18px;background:#fff;border:1px solid rgba(95,120,81,.18)}.venue-box p{margin:3px 0}.venue-box .btn{margin-top:9px}.theme-coming{display:inline-block;padding:5px 11px;border-radius:999px;background:#fff1b7;color:#775448;font-weight:900}.shared-info{margin-top:18px;padding:18px;border-radius:20px;background:#f7f3e8}.shared-info h3{margin:0 0 7px}.shared-info p{margin:3px 0}@media(max-width:980px){.activity-grid,.common-note{grid-template-columns:repeat(2,1fr)}}@media(max-width:780px){.activity-grid,.common-note{grid-template-columns:1fr}}
+  </style>
+  <style>
+    .brand{flex:0 0 auto}.brand-logo{display:block;width:190px;max-width:38vw;height:auto}.hero-logo{display:block;width:min(430px,78vw);height:auto;margin:0 auto 14px;filter:drop-shadow(0 7px 12px rgba(109,82,51,.07))}.hero h1{font-family:"Huninn","Noto Sans TC","PingFang TC",sans-serif;font-weight:400;letter-spacing:.035em;-webkit-text-stroke:.35px currentColor}.activity-poster{margin:0 auto 22px;padding:10px;max-width:980px;border:2px solid rgba(234,223,206,.9);border-radius:30px;background:#fff;box-shadow:var(--shadow)}.activity-poster img{display:block;width:100%;height:auto;border-radius:20px}.activity-poster figcaption{padding:8px 8px 2px;color:var(--muted);font-size:13px;text-align:center}.signup-section{margin:24px auto 0;padding:clamp(25px,4vw,38px);border:2px solid #d9e4cf;border-radius:30px;background:linear-gradient(135deg,#f0f7eb,#fff8e7);box-shadow:var(--shadow)}.signup-section h2{margin:0;color:var(--brown);font-size:clamp(26px,4vw,38px)}.signup-section>p{margin:5px 0 17px;color:var(--muted)}.signup-options{display:grid;grid-template-columns:1fr 1fr;gap:13px}.signup-card{padding:20px;border:2px solid var(--line);border-radius:21px;background:#fff}.signup-card:first-child{border-color:#ead38c;background:#fffaf0}.signup-card:last-child{border-color:#cbdcc1;background:#f7fbf4}.signup-card strong{display:block;color:var(--brown);font-size:19px}.signup-card p{margin:5px 0 13px;color:var(--muted);font-size:14px}.signup-card .btn{width:100%}@media(max-width:780px){.brand-logo{width:170px;max-width:62vw}.hero-logo{width:min(360px,82vw)}.activity-poster{padding:6px;border-radius:22px}.activity-poster img{border-radius:15px}.signup-options{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#home" data-page="home"><img class="brand-logo" src="funnyface-logo-transparent.png" alt="FunnyFace 小基地"></a>
+      <nav class="nav" aria-label="頁面選單">
+        <button class="active" data-page="home">五感首頁</button>
+        <button data-page="little-feet">小腳ㄚ</button>
+        <button data-page="flower">FLOWER</button>
+        <button data-page="january">1月場</button>
+        <button data-scroll="upcoming">近期場次</button>
+        <a class="btn yellow" href="https://lin.ee/Qdzb1mb" target="_blank" rel="noopener">找小編</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page active" id="home">
+    <section class="hero">
+      <div class="sun"></div><div class="cloud"></div>
+      <div class="wrap hero-copy">
+        <img class="hero-logo" src="funnyface-logo-transparent.png" alt="FunnyFace 小基地">
+        <span class="eyebrow">TOUCH · MOVE · CREATE</span>
+        <h1>小小身體，<br><span>大大感受。</span></h1>
+        <p class="lead">把主題、觸感、動作與創作放在一起，陪孩子用自己的步調探索，也讓大人重新看見孩子正在感受什麼。</p>
+        <div class="hero-actions"><button class="btn yellow" data-scroll="upcoming">看看近期活動</button><button class="btn light" data-page="little-feet">先看小腳ㄚ</button></div>
+      </div>
+      <div class="landscape"><div class="hill a"></div><div class="hill b"></div><div class="hill c"></div><span class="doodle d1">🎨</span><span class="doodle d2">🌈</span><span class="doodle d3">🫧</span><span class="doodle d4">👣</span></div>
+    </section>
+
+    <main>
+      <section class="section wrap" id="upcoming">
+        <div class="section-head"><div><span class="eyebrow">UPCOMING</span><h2>近期五感活動</h2></div><p>每一場都有自己的主題與活動頁；系列共同須知集中放在五感首頁，家長不需要重複找資料。</p></div>
+        <div class="activity-grid">
+          <article class="activity-card"><div class="icon">👣</div><div class="tags"><span class="tag">12/6（日）</span><span class="tag">2Y～中班</span><span class="tag">親子同堂</span></div><h3>小腳ㄚ</h3><p>脫下鞋襪，從腳尖輕輕碰觸到踩一踩、走一走，發現腳底平常沒注意到的觸感。</p><button class="btn" data-page="little-feet">查看完整活動</button></article>
+          <article class="activity-card"><div class="icon">🌼</div><div class="tags"><span class="tag">12/13（日）</span><span class="tag">2Y～中班</span><span class="tag">親子同堂</span></div><h3>FLOWER</h3><p>以花朵為主題，延續每月五感活動的節奏，讓孩子透過媒材、觸感與創作慢慢探索。</p><button class="btn" data-page="flower">查看完整活動</button></article>
+          <article class="activity-card"><div class="icon">🧧</div><div class="tags"><span class="tag">1/10（日）</span><span class="tag">2Y～中班</span><span class="tag">過年主題</span></div><h3>過年五感體驗</h3><p>一月場以過年為主題，時間、對象與參加方式和每月五感活動相同；詳細玩法與海報會再補上。</p><button class="btn" data-page="january">查看一月場次</button></article>
+        </div>
+      </section>
+
+      <section class="section wrap"><div class="philosophy"><h2>主題開場 × 感官探索 × 藝術創作</h2><p>五感體驗為 2 歲至幼兒園中班設計。孩子可能馬上投入，也可能先站在旁邊看一看；活動會保留觀察、試探與休息的空間，讓每個孩子依照自己的節奏靠近媒材、認識身體，也練習表達喜歡與不喜歡。</p></div></section>
+
+      <section class="section wrap"><div class="section-head"><div><span class="eyebrow">HOW WE PLAY</span><h2>每一場，都會經過這三段</h2></div></div><div class="steps"><article class="step"><b>01</b><h3>認識今天的主題</h3><p>先看看今天會使用的媒材與玩法，讓孩子慢慢靠近、準備開始。</p></article><article class="step"><b>02</b><h3>用身體探索</h3><p>摸、踩、聞、看、移動，慢慢發現媒材和身體的變化。</p></article><article class="step"><b>03</b><h3>留下自己的創作</h3><p>沒有標準答案，把當下的感受變成孩子自己的作品。</p></article></div></section>
+
+      <section class="section wrap"><div class="section-head"><div><span class="eyebrow">GOOD TO KNOW</span><h2>參加前先知道</h2></div></div><div class="common-note"><div class="note-card"><strong>每月一場</strong><span>單堂體驗，每次主題與媒材都不同。</span></div><div class="note-card"><strong>一位家長陪同</strong><span>每位孩子僅需一位家長陪同參加。</span></div><div class="note-card"><strong>可以弄髒</strong><span>請穿方便活動的衣物，並準備替換衣物與毛巾。</span></div><div class="note-card"><strong>HappyFace 大基地</strong><span>暖暖街 459 號 1 樓（全家旁邊）。</span></div></div></section>
+
+      <section class="signup-section wrap"><h2>報名方式</h2><p>請依孩子是否參加過 FunnyFace／HappyFace 活動，選擇對應的報名入口。</p><div class="signup-options"><article class="signup-card"><strong>第一次參加｜新生</strong><p>請先填寫報名前置表單，讓我們先認識孩子與家庭的需求。</p><a class="btn yellow" href="https://forms.gle/wfYADgp4PnDDFuRk8" target="_blank" rel="noopener">填寫報名前置表單</a></article><article class="signup-card"><strong>已參加過｜舊生</strong><p>曾參加過基地活動，可直接透過官方 LINE 告訴小編想報名的場次。</p><a class="btn" href="https://lin.ee/Qdzb1mb" target="_blank" rel="noopener">前往官方 LINE 報名</a></article></div></section>
+    </main>
+  </div>
+
+  <div class="page" id="little-feet">
+    <main class="wrap">
+      <div class="back"><button class="btn light" data-page="home">← 回五感首頁</button></div>
+      <section class="detail-hero"><span class="eyebrow">五感體驗｜單場活動</span><h1>小腳ㄚ 👣</h1><p class="sub">脫下鞋襪，讓小腳ㄚ也來一場探索。從腳尖輕輕碰觸，到踩上去、走一走，陪孩子發現軟硬、粗細與身體移動時的不同感受。</p><div class="facts"><div class="fact"><span>日期</span><strong>12/6（日）</strong></div><div class="fact"><span>時間</span><strong>10:30–11:30</strong></div><div class="fact"><span>對象</span><strong>2Y～中班</strong></div><div class="fact"><span>費用</span><strong>$580</strong></div></div></section>
+
+      <figure class="activity-poster"><img src="poster-little-feet.png" alt="五感體驗愛玩課小腳ㄚ活動海報，12 月 6 日 10:30 至 11:30"><figcaption>小腳ㄚ｜活動海報</figcaption></figure>
+
+      <section class="detail-layout">
+        <article class="card"><h2>這一堂會玩什麼？</h2><p>活動運用不同媒材，邀請孩子用小腳踩踩看，感受平常穿著鞋襪時不容易察覺的細節。每個孩子都有自己的探索方式，我們會陪伴孩子依照自己的步調嘗試，用動作、表情或語言表達發現。</p><div class="feature-list"><div class="feature"><strong>👣 多樣腳底觸感</strong><br>透過不同媒材，體驗軟硬、粗細與溫度的變化。</div><div class="feature"><strong>🧍 身體與腳步</strong><br>在踩踏與移動中，留意身體重心與腳步的改變。</div><div class="feature"><strong>💬 表達自己的感受</strong><br>練習說出喜歡、猶豫或不舒服，也認識自己的偏好。</div></div></article>
+        <aside class="card side-card"><h2>活動資訊</h2><p><strong>僅需一位家長陪同</strong></p><p>10:20 後可進場；費用包含講師、教材與場地，3 人開班。</p><h3>請準備</h3><ul><li>方便活動、可以弄髒的衣物</li><li>一套替換衣物</li><li>擦拭用毛巾或濕紙巾</li><li>孩子的水壺</li></ul><div class="venue-box"><strong>📍 HappyFace 大基地</strong><p>暖暖街 459 號 1 樓（全家旁邊）</p><a class="btn light" href="https://maps.app.goo.gl/oyYRuQWsybE1D6WGA" target="_blank" rel="noopener">開啟 Google 地圖</a></div></aside>
+      </section>
+
+      <section class="accordion-wrap">
+        <article class="accordion-group"><h2>參加注意事項</h2><details open><summary>孩子不敢踩怎麼辦？</summary><div>可以先觀察、用腳尖輕碰，或暫時休息。活動不要求孩子完成每一項體驗，也不會勉強孩子接觸不舒服的媒材。</div></details><details><summary>衣物與清潔準備</summary><div>活動中會脫鞋襪並赤腳探索，請穿可弄髒、方便活動的衣物，準備替換衣物以及毛巾或濕紙巾。</div></details><details><summary>健康與特殊需求</summary><div>若孩子有過敏、皮膚狀況、感覺較敏感或其他需要留意的情形，請在報名前主動告知。</div></details><details><summary>報名與退費</summary><div>完成繳費並收到小編確認後才算保留名額。單次活動完成報名後原則上不退費；無法出席可先聯繫小編詢問名額轉讓。</div></details></article>
+        <article class="accordion-group"><h2>常見問題 QA</h2><details open><summary>家長一定要陪同嗎？</summary><div>需要。五感課為親子同堂，每位孩子需一位家長陪同，共同參與並協助安全。</div></details><details><summary>孩子需要先具備什麼能力？</summary><div>不需要特定能力。能依自己的步調觀察、嘗試與休息，就是這次活動的重要經驗。</div></details><details><summary>活動會拍照嗎？</summary><div>老師會記錄孩子的探索與創作時刻，照片與影片可能作為 FunnyFace 的活動紀錄與宣傳使用；若有顧慮，請在活動前告知小編。</div></details><details><summary>要怎麼報名？</summary><div>請先透過官方 LINE 告訴小編孩子姓名、年齡與想參加的場次，確認名額後再依通知完成報名與繳費。</div></details></article>
+      </section>
+
+      <section class="signup-section"><h2>報名小腳ㄚ</h2><p>新生請先填寫報名前置表單；舊生可直接透過官方 LINE 報名。</p><div class="signup-options"><article class="signup-card"><strong>第一次參加｜新生</strong><p>先填寫報名前置表單，完成後等待小編聯繫。</p><a class="btn yellow" href="https://forms.gle/wfYADgp4PnDDFuRk8" target="_blank" rel="noopener">填寫報名前置表單</a></article><article class="signup-card"><strong>已參加過｜舊生</strong><p>直接到官方 LINE 告訴小編要報名「小腳ㄚ」。</p><a class="btn" href="https://lin.ee/Qdzb1mb" target="_blank" rel="noopener">官方 LINE 報名</a></article></div></section>
+    </main>
+  </div>
+
+  <div class="page" id="flower">
+    <main class="wrap">
+      <div class="back"><button class="btn light" data-page="home">← 回五感首頁</button></div>
+      <section class="detail-hero"><span class="eyebrow">五感體驗｜單場活動</span><h1>FLOWER 🌼</h1><p class="sub">十二月的五感主題，讓孩子從花朵的顏色、形狀與感受出發，透過媒材、觸感和創作留下自己的 FLOWER。</p><div class="facts"><div class="fact"><span>日期</span><strong>12/13（日）</strong></div><div class="fact"><span>時間</span><strong>10:30–11:30</strong></div><div class="fact"><span>對象</span><strong>2Y～中班</strong></div><div class="fact"><span>費用</span><strong>$580</strong></div></div></section>
+      <figure class="activity-poster"><img src="poster-flower.png" alt="五感體驗愛玩課 FLOWER 活動海報，12 月 13 日 10:30 至 11:30"><figcaption>FLOWER｜活動海報</figcaption></figure>
+      <section class="detail-layout">
+        <article class="card"><h2>本月主題｜FLOWER</h2><p>每月五感活動會更換主題與媒材。FLOWER 場次以花朵為主題，讓孩子用眼睛觀察、用身體感受，再依照自己的方式參與創作。</p><div class="shared-info"><h3>五感活動共同安排</h3><p>單堂 60 分鐘，2 歲至幼兒園中班參加。</p><p>每位孩子僅需一位家長陪同，10:20 後可進場。</p><p>活動會使用顏料或感官媒材，衣物可能弄髒。</p></div></article>
+        <aside class="card side-card"><h2>活動資訊</h2><p><strong>僅需一位家長陪同</strong></p><p>費用包含講師、教材與場地；3 人開班。</p><h3>請準備</h3><ul><li>方便活動、可以弄髒的衣物</li><li>一套替換衣物</li><li>毛巾或濕紙巾</li><li>孩子的水壺</li></ul><div class="venue-box"><strong>📍 HappyFace 大基地</strong><p>暖暖街 459 號 1 樓（全家旁邊）</p><a class="btn light" href="https://maps.app.goo.gl/oyYRuQWsybE1D6WGA" target="_blank" rel="noopener">開啟 Google 地圖</a></div></aside>
+      </section>
+      <section class="accordion-wrap">
+        <article class="accordion-group"><h2>參加注意事項</h2><details open><summary>衣物與清潔準備</summary><div>活動會使用顏料或感官媒材，請穿可以弄髒、方便活動的衣物，並準備替換衣物與毛巾。</div></details><details><summary>健康與特殊需求</summary><div>若孩子有過敏、皮膚狀況、感覺較敏感或其他需要留意的情形，請在報名前主動告知。</div></details><details><summary>報名與退費</summary><div>完成繳費並收到小編確認後才算保留名額。單次活動完成報名後原則上不退費；無法出席可先聯繫小編詢問名額轉讓。</div></details></article>
+        <article class="accordion-group"><h2>常見問題 QA</h2><details open><summary>家長一定要陪同嗎？</summary><div>需要。每位孩子僅需一位家長陪同，共同參與並協助安全。</div></details><details><summary>幾點可以進場？</summary><div>活動時間為 10:30～11:30，10:20 後開放進場。</div></details><details><summary>要怎麼報名？</summary><div>請先透過官方 LINE 告訴小編孩子姓名、年齡與想參加的場次，確認名額後再依通知完成報名與繳費。</div></details></article>
+      </section>
+      <section class="signup-section"><h2>報名 FLOWER</h2><p>新生請先填寫報名前置表單；舊生可直接透過官方 LINE 報名。</p><div class="signup-options"><article class="signup-card"><strong>第一次參加｜新生</strong><p>先填寫報名前置表單，完成後等待小編聯繫。</p><a class="btn yellow" href="https://forms.gle/wfYADgp4PnDDFuRk8" target="_blank" rel="noopener">填寫報名前置表單</a></article><article class="signup-card"><strong>已參加過｜舊生</strong><p>直接到官方 LINE 告訴小編要報名「FLOWER」。</p><a class="btn" href="https://lin.ee/Qdzb1mb" target="_blank" rel="noopener">官方 LINE 報名</a></article></div></section>
+    </main>
+  </div>
+
+  <div class="page" id="january">
+    <main class="wrap">
+      <div class="back"><button class="btn light" data-page="home">← 回五感首頁</button></div>
+      <section class="detail-hero"><span class="eyebrow">五感體驗｜一月場</span><h1>過年五感體驗 🧧</h1><p class="sub"><span class="theme-coming">過年主題</span></p><p class="sub">一月場會以過年為主題，帶孩子從年節色彩與感官媒材展開探索；詳細玩法與海報確認後會再補上。</p><div class="facts"><div class="fact"><span>日期</span><strong>1/10（日）</strong></div><div class="fact"><span>時間</span><strong>10:30–11:30</strong></div><div class="fact"><span>對象</span><strong>2Y～中班</strong></div><div class="fact"><span>費用</span><strong>$580</strong></div></div></section>
+      <section class="detail-layout">
+        <article class="card"><h2>一月主題｜過年</h2><p>這一場將從孩子熟悉的過年氣氛出發，延續五感活動的探索節奏。詳細媒材、玩法與活動介紹確認後會直接補進這一頁。</p><div class="shared-info"><h3>已確認的活動資訊</h3><p>1/10（日）10:30～11:30，10:20 後可進場。</p><p>2 歲至幼兒園中班，每位孩子僅需一位家長陪同。</p><p>地點為 HappyFace 大基地。</p></div></article>
+        <aside class="card side-card"><h2>參加準備</h2><p>五感活動會使用顏料或感官媒材，請先依共同方式準備：</p><ul><li>方便活動、可以弄髒的衣物</li><li>一套替換衣物</li><li>毛巾或濕紙巾</li><li>孩子的水壺</li></ul><div class="venue-box"><strong>📍 HappyFace 大基地</strong><p>暖暖街 459 號 1 樓（全家旁邊）</p><a class="btn light" href="https://maps.app.goo.gl/oyYRuQWsybE1D6WGA" target="_blank" rel="noopener">開啟 Google 地圖</a></div><div class="poster-placeholder"><div><b>🖼️</b><span>過年主題活動海報</span><br><small>海報完成後會放在這裡。</small></div></div></aside>
+      </section>
+      <section class="accordion-wrap">
+        <article class="accordion-group"><h2>參加注意事項</h2><details open><summary>衣物與清潔準備</summary><div>請穿可以弄髒、方便活動的衣物，並準備替換衣物與毛巾。</div></details><details><summary>健康與特殊需求</summary><div>若孩子有過敏、皮膚狀況、感覺較敏感或其他需要留意的情形，請在報名前主動告知。</div></details><details><summary>報名與退費</summary><div>完成繳費並收到小編確認後才算保留名額。單次活動完成報名後原則上不退費；無法出席可先聯繫小編詢問名額轉讓。</div></details></article>
+        <article class="accordion-group"><h2>常見問題 QA</h2><details open><summary>活動內容什麼時候公布？</summary><div>過年主題已確認，詳細玩法與海報完成後會直接更新在本頁，日期與時間不變。</div></details><details><summary>家長一定要陪同嗎？</summary><div>需要。每位孩子僅需一位家長陪同，共同參與並協助安全。</div></details><details><summary>要怎麼報名？</summary><div>請先透過官方 LINE 詢問一月場次，確認名額後再依通知完成報名與繳費。</div></details></article>
+      </section>
+      <section class="signup-section"><h2>登記過年五感體驗</h2><p>新生請先填寫報名前置表單；舊生可直接透過官方 LINE 登記。</p><div class="signup-options"><article class="signup-card"><strong>第一次參加｜新生</strong><p>先填寫報名前置表單，完成後等待小編聯繫。</p><a class="btn yellow" href="https://forms.gle/wfYADgp4PnDDFuRk8" target="_blank" rel="noopener">填寫報名前置表單</a></article><article class="signup-card"><strong>已參加過｜舊生</strong><p>直接到官方 LINE 告訴小編要登記「1/10 過年五感」。</p><a class="btn" href="https://lin.ee/Qdzb1mb" target="_blank" rel="noopener">官方 LINE 登記</a></article></div></section>
+    </main>
+  </div>
+
+  <footer class="footer"><div class="wrap footer-grid"><div><h3>FunnyFace 小基地</h3><p>在基隆暖暖，陪孩子一起學習、一起玩。</p></div><div class="footer-links"><a href="https://www.facebook.com/funnyface202209" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/fffunnyffface/" target="_blank" rel="noopener">Instagram</a><a href="https://lin.ee/Qdzb1mb" target="_blank" rel="noopener">官方 LINE</a></div></div></footer>
+
+  <script>
+    const pages=[...document.querySelectorAll('.page')];
+    function showPage(id){pages.forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('[data-page]').forEach(b=>b.classList.toggle('active',b.dataset.page===id));history.replaceState(null,'','#'+id);window.scrollTo({top:0,behavior:'smooth'});}
+    document.querySelectorAll('[data-page]').forEach(el=>el.addEventListener('click',e=>{if(el.tagName==='A')e.preventDefault();showPage(el.dataset.page)}));
+    document.querySelectorAll('[data-scroll]').forEach(el=>el.addEventListener('click',()=>{showPage('home');setTimeout(()=>document.getElementById(el.dataset.scroll)?.scrollIntoView({behavior:'smooth'}),80)}));
+    const initial=location.hash.slice(1);if(initial&&document.getElementById(initial))showPage(initial);
+  </script>
+</body>
+</html>
